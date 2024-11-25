@@ -1,0 +1,57 @@
+/* Grid General */
+.distros-grid {
+    display: grid;
+    gap: 20px; /* Espaciado entre los elementos */
+    margin-top: 20px;
+}
+
+/* Grid de 3 columnas */
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+}
+
+/* Grid de 2 columnas */
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .grid-3, .grid-2 {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    }
+}
+
+/* Tarjeta de Distribución */
+.distro-item {
+    background-color: #111; /* Fondo oscuro */
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #00ff00; /* Borde fino verde */
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.distro-item:hover {
+    transform: scale(1.05); /* Efecto hover */
+    border-color: #00cc00;
+}
+
+.distro-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain; /* Asegura que la imagen no se deforme */
+    margin-bottom: 10px;
+}
+
+.distro-item h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+    color: #00ff00;
+}
+
+.distro-item p {
+    font-size: 0.9em;
+    color: #00ff00;
+    margin: 0;
+}
