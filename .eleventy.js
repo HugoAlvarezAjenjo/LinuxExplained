@@ -1,5 +1,5 @@
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addGlobalData("basePath", process.env.NODE_ENV === 'production' ? "/Prueba" : "");
+  eleventyConfig.addGlobalData("basePath", process.env.NODE_ENV === 'production' ? "/LinuxExplained" : "");
   eleventyConfig.addPassthroughCopy("src/img");
   eleventyConfig.addPassthroughCopy("src/styles");
   eleventyConfig.addPassthroughCopy("src/js");
