@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="{{ basePath }}/styles/style.css">
+  {% if css %}
+  <link rel="stylesheet" href="{{ basePath }}{{ css }}">
+  {% endif %}
+</head>
+
+<body>
+  <div class="terminal">
+    <header class="terminal-header">
+      <h1>{{ title }}</h1>
+    </header>
+    <main class="terminal-body">
+      {{ content | safe }}
+    </main>
+    <footer class="terminal-footer">
+      <p>&copy; Hugo Alvarez - 2024 | Taller Linux</p>
+    </footer>
+  </div>
+  <script src="{{ basePath }}/js/matrix.js"></script>
+</body>
+
+</html>

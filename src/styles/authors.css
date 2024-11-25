@@ -1,0 +1,56 @@
+/* Autores */
+.authors-section {
+    margin-top: 30px;
+}
+
+.authors {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaciado uniforme entre las tarjetas */
+}
+
+.author {
+    flex: 1 1 45%; /* Adapta al 45% del contenedor para pantallas grandes */
+    max-width: 200px; /* Limita el ancho máximo */
+    text-align: center;
+    color: #00ff00;
+    margin: 10px auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Alineación vertical de los elementos */
+    align-items: center; /* Centra la imagen y el texto horizontalmente */
+    justify-content: center; /* Centra todo verticalmente */
+    height: 200px; /* Fija la altura de las tarjetas */
+}
+
+/* Imagen del autor */
+.author img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #00ff00;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.author img:hover {
+    transform: scale(1.1);
+}
+
+/* Nombre del autor */
+.author p {
+    font-size: 1em;
+    margin: 0;
+    padding: 5px 0;
+    white-space: nowrap; /* Evita que el texto se desborde a la siguiente línea */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Crea puntos suspensivos si el texto es demasiado largo */
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 600px) {
+    .author {
+        flex: 1 1 100%; /* En móviles, cada tarjeta ocupa el ancho completo */
+    }
+}

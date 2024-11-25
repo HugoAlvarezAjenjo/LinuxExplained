@@ -1,0 +1,35 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE20: true  # Forzamos Node.js 20
+      NODE_ENV: production
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3  # Asegúrate de que sea la versión más reciente
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3  # La versión más reciente de la acción
+        with:
+          node-version: '20'  # Especificamos que se use Node.js 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build with 11ty
+        run: npx @11ty/eleventy
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3  # Usando la versión más reciente de la acción
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
