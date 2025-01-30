@@ -17,11 +17,11 @@ css: /styles/authors.css
 <div class="authors-section">
   <div class="authors">
     <div class="author">
-      <img src="{{ basePath }}/img/Personas/Hugo.jpg" alt="Author 1">
+      <a href="https://github.com/HugoAlvarezAjenjo"><img src="{{ basePath }}/img/Personas/Hugo.jpg" alt="Author 1"></a>
       <p>Hugo Alvarez</p>
     </div>
     <div class="author">
-      <img src="{{ basePath }}/img/Personas/Junhao.jpg" alt="Author 2">
+      <a href="https://github.com/zhuzhangjunhao"><img src="{{ basePath }}/img/Personas/Junhao.jpg" alt="Author 2"></a>
       <p>Junhao Zhu</p>
     </div>
     <div class="author">
