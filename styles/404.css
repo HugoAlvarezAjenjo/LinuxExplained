@@ -1,0 +1,76 @@
+/* Fondo de la página */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;    /* Centrar verticalmente */
+    height: 100vh;          /* Altura total de la ventana */
+    background-color: #000; /* Fondo oscuro */
+    font-family: 'Courier New', Courier, monospace;
+    color: #00ff00;         /* Texto estilo Matrix */
+    text-align: center;
+    overflow: hidden;       /* Evitar barras de scroll innecesarias */
+}
+
+/* Contenedor del error */
+.error-container {
+    width: 80vmin;          /* Tamaño basado en el menor entre el ancho y altura de la ventana */
+    height: 80vmin;         /* Mantener un cuadrado perfecto */
+    display: flex;          /* Flexbox para alinear contenido */
+    flex-direction: column; /* Elementos en columna */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center;    /* Centrar horizontalmente */
+    border: 2px solid #00ff00; /* Borde verde brillante */
+    border-radius: 10px;    /* Esquinas redondeadas */
+    background-color: #111; /* Fondo interno oscuro */
+    box-shadow: 0 0 15px #00ff00;
+    animation: glow 2s infinite alternate;
+}
+
+/* Efecto de brillo */
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px #00ff00;
+    }
+    to {
+        box-shadow: 0 0 25px #00ff00;
+    }
+}
+
+/* Imagen del error */
+.error-image {
+    max-width: 60%;         /* Imagen ocupa la mitad del contenedor como máximo */
+    height: auto;           /* Mantener proporción */
+    margin-bottom: 1em;     /* Espacio entre la imagen y el texto */
+}
+
+/* Texto del error */
+.error-container h1 {
+    font-size: 2em;       /* Tamaño proporcional al cuadrado */
+    margin: 0;
+}
+
+.error-container p {
+    font-size: 1em;         /* Tamaño proporcional */
+    margin: 0.5em 0;
+}
+
+/* Botón de regreso */
+.home-button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    font-size: 1.5em;         /* Tamaño proporcional */
+    color: #00ff00;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #00ff00;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin-top: 1em;
+}
+
+.home-button:hover {
+    background-color: #00ff00;
+    color: #000;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TTY</title>
+  <link rel="stylesheet" href="/LinuxExplained/styles/style.css">
+  
+</head>
+
+<body>
+  <div class="terminal">
+    <header class="terminal-header">
+      <h1>TTY</h1>
+    </header>
+    <main class="terminal-body">
+      <hr>
+<p>Las TTY (teletypewriters) son terminales virtuales en Linux que permiten la interacción directa con el sistema sin necesidad de un entorno gráfico. Son fundamentales para la administración del sistema y ofrecen un entorno seguro y eficiente para ejecutar comandos.</p>
+<h2>¿Qué es una TTY?</h2>
+<p>En los sistemas Unix y Linux, una <strong>TTY (teletypewriter)</strong> es una interfaz de línea de comandos que permite a los usuarios interactuar con el sistema operativo. Originalmente, el término se refería a dispositivos físicos de teletipo, pero en la actualidad, las TTY en Linux son terminales virtuales.</p>
+<p>Cada TTY proporciona acceso a una shell sin necesidad de un entorno gráfico, lo que las hace útiles para la recuperación del sistema, administración remota y optimización del rendimiento.</p>
+<h2>Accediendo a las TTY en Linux</h2>
+<p>Linux proporciona varias terminales virtuales que pueden ser accedidas mediante combinaciones de teclas:</p>
+<ul>
+<li><code>Ctrl + Alt + F1</code> a <code>Ctrl + Alt + F6</code> → Cambia entre diferentes TTYs.</li>
+<li><code>Ctrl + Alt + F7</code> (o <code>F2</code> en algunas distribuciones) → Retorna al entorno gráfico si está en uso.</li>
+</ul>
+<p>Para abrir una TTY desde la terminal gráfica, se puede utilizar:</p>
+<h2>Diferencia entre TTY, PTY y Emuladores de Terminal</h2>
+<table>
+<thead>
+<tr>
+<th>Concepto</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>TTY (Teletypewriter)</strong></td>
+<td>Terminal virtual accesible directamente, sin entorno gráfico.</td>
+</tr>
+<tr>
+<td><strong>PTY (Pseudo-Terminal)</strong></td>
+<td>Interfaz utilizada por emuladores de terminal para comunicarse con el sistema.</td>
+</tr>
+<tr>
+<td><strong>Emulador de Terminal</strong></td>
+<td>Programa gráfico (como GNOME Terminal, Alacritty) que permite acceder a una shell en un entorno de escritorio.</td>
+</tr>
+</tbody>
+</table>
+<h2>Usos de las TTY</h2>
+<ul>
+<li><strong>Recuperación del sistema:</strong> Si el entorno gráfico falla, se puede acceder a una TTY para solucionarlo.</li>
+<li><strong>Administración remota:</strong> Se pueden iniciar sesiones SSH desde una TTY.</li>
+<li><strong>Optimización de recursos:</strong> No requieren interfaz gráfica, lo que reduce el consumo de RAM y CPU.</li>
+<li><strong>Gestión de múltiples sesiones:</strong> Permite ejecutar distintas tareas en varias TTYs simultáneamente.</li>
+</ul>
+<p>Por ejemplo cuando inicias un Arch linux por primera vez, es lo que utilizas ya que no dispones de interfaz grafica.</p>
+
+    </main>
+    <footer class="terminal-footer">
+      <p>&copy; Hugo Alvarez - 2024 | Taller Linux</p>
+    </footer>
+  </div>
+  <script src="/LinuxExplained/js/matrix.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Multiplexores de Terminal</title>
+  <link rel="stylesheet" href="/LinuxExplained/styles/style.css">
+  
+</head>
+
+<body>
+  <div class="terminal">
+    <header class="terminal-header">
+      <h1>Multiplexores de Terminal</h1>
+    </header>
+    <main class="terminal-body">
+      <hr>
+<p>Los multiplexores de terminal son herramientas que permiten gestionar múltiples sesiones dentro de una misma ventana de terminal. Son especialmente útiles para usuarios que trabajan con servidores remotos, sesiones persistentes y organización avanzada del espacio de trabajo en la línea de comandos.</p>
+<h2>¿Qué es un Multiplexor de Terminal?</h2>
+<p>Un multiplexor de terminal es un programa que permite dividir una sesión de terminal en múltiples paneles o pestañas y gestionar sesiones de manera independiente. Esto es útil para mantener procesos en ejecución, incluso si la conexión con el terminal se pierde.</p>
+<p>Algunos <a href="./emulador.md">emuladores de terminal</a> ya los tienen integrados</p>
+<h3>Beneficios de usar un multiplexor:</h3>
+<ul>
+<li>Permite dividir la terminal en múltiples paneles.</li>
+<li>Mantiene sesiones activas en segundo plano.</li>
+<li>Facilita la administración de múltiples tareas en un solo entorno.</li>
+<li>Ofrece funcionalidad avanzada como el reenvío de sesiones en SSH.</li>
+</ul>
+<h2>Multiplexores Populares</h2>
+<h3>tmux</h3>
+<p><code>tmux</code> es uno de los multiplexores más populares en Linux. Ofrece una gran flexibilidad y personalización.</p>
+<p><strong>Características:</strong></p>
+<ul>
+<li>Soporte para múltiples ventanas y paneles.</li>
+<li>Sesiones persistentes incluso si se cierra la terminal.</li>
+<li>Atajos de teclado personalizables.</li>
+<li>Compatibilidad con scripting y automatización.</li>
+</ul>
+<p><strong>Archivos de configuración:</strong></p>
+<ul>
+<li><code>~/.tmux.conf</code></li>
+</ul>
+<h3>GNU Screen</h3>
+<p><code>screen</code> es otro multiplexor ampliamente utilizado, con un enfoque en la estabilidad y facilidad de uso.</p>
+<p><strong>Características:</strong></p>
+<ul>
+<li>Mantiene sesiones activas en segundo plano.</li>
+<li>Soporte para múltiples ventanas.</li>
+<li>Integración con SSH para sesiones persistentes.</li>
+<li>Permite compartir sesiones con otros usuarios.</li>
+</ul>
+<p><strong>Archivos de configuración:</strong></p>
+<ul>
+<li><code>~/.screenrc</code></li>
+</ul>
+<h2>Opinion Personal</h2>
+<p>El uso de multiplexores de terminal mejora la productividad y la gestión de sesiones en Linux.</p>
+<p>Yo que soy usuario de Kitty, ya tiene el multiplexor integrado, pero todos mis conocidos que usan un multiplexor utilizan tmux</p>
+
+    </main>
+    <footer class="terminal-footer">
+      <p>&copy; Hugo Alvarez - 2024 | Taller Linux</p>
+    </footer>
+  </div>
+  <script src="/LinuxExplained/js/matrix.js"></script>
+</body>
+
+</html>
