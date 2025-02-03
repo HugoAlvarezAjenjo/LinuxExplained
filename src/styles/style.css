@@ -122,3 +122,26 @@ canvas {
     height: auto; /* Mantiene la proporción de la imagen al reducir el ancho */
 }
 
+
+/* Estilos para enlaces */
+a {
+    color: #00ff00; /* Verde neón */
+    text-decoration: none; /* Sin subrayado por defecto */
+    transition: color 0.3s ease, border-bottom 0.3s ease, text-shadow 0.3s ease; /* Transiciones más suaves */
+    border-bottom: 2px solid transparent; /* Borde invisible al principio */
+}
+
+a:hover {
+    color: #33ff33; /* Verde más claro en hover */
+    text-shadow: 0 0 8px #00ff00; /* Resplandor sutil */
+    text-decoration: underline; /* Se subraya en hover */
+}
+
+/* Estilos específicos para "Leer más" */
+.read-more {
+    font-weight: bold; /* Resalta más */
+}
+
+.read-more:hover {
+    text-shadow: 0 0 12px #00ff00; /* Más resplandor */
+}
