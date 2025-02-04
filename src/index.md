@@ -11,7 +11,7 @@ css: /styles/authors.css
 
 <div class="boot-section">
   <h2>¿Listo para entrar al sistema?</h2>
-  <a href="/distributions.html" class="boot-button">Boot the System</a>
+  <a href="./content/consola" class="boot-button">Boot the System</a>
 </div>
 
 <div class="authors-section">

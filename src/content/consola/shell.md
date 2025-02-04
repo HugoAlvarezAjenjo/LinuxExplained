@@ -49,7 +49,3 @@ Se compone de un archivo de configuracion:
 Se compone de un archivo de configuración:
 
 - `~/.config/fish/config.fish` → Configuración principal.
-
-<br>
-
-Yo personalmente uso una ZSH

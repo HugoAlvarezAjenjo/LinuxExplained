@@ -49,9 +49,3 @@ Algunos [emuladores de terminal](./emulador.md) ya los tienen integrados
 
 **Archivos de configuración:**
 - `~/.screenrc`
-
-## Opinion Personal
-
-El uso de multiplexores de terminal mejora la productividad y la gestión de sesiones en Linux.
-
-Yo que soy usuario de Kitty, ya tiene el multiplexor integrado, pero todos mis conocidos que usan un multiplexor utilizan tmux
