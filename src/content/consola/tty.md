@@ -37,4 +37,4 @@ Para abrir una TTY desde la terminal gráfica, se puede utilizar:
 - **Optimización de recursos:** No requieren interfaz gráfica, lo que reduce el consumo de RAM y CPU.
 - **Gestión de múltiples sesiones:** Permite ejecutar distintas tareas en varias TTYs simultáneamente.
 
-Por ejemplo cuando inicias un Arch linux por primera vez, es lo que utilizas ya que no dispones de interfaz grafica.
+Por ejemplo cuando inicias un Arch Linux por primera vez, es lo que utilizas ya que no dispones de interfaz gráfica.
