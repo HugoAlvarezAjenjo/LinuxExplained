@@ -4,9 +4,9 @@ title: Distribuciones
 css: /styles/grid.css
 ---
 
-Una **distribución de linux** es una versión personalizada del sistema operativo linux que
+Una **distribución de Linux** es una versión personalizada del sistema operativo Linux que
 combina el núcleo (kernel) con un conjunto de aplicaciones, herramientas y configuraciones que se
-utilizan para diferentes propositos, como uso personal, servidores, ciberseguridad...
+utilizan para diferentes propósitos, como uso personal, servidores, ciberseguridad...
 
 <section>
     <h2>Uso General</h2>
@@ -23,7 +23,7 @@ utilizan para diferentes propositos, como uso personal, servidores, cibersegurid
         </div>
         <div class="distro-item">
             <img src="{{ basePath }}/img/distro/debian.png" alt="Linux Mint Logo">
-            <h3>Debian</h3>
+            <h3><a href="https://wiki.debian.org/">Debian</a></h3>
             <p>Estable y confiable, ideal para desarrolladores y servidores ligeros.</p>
         </div>
         <div class="distro-item">
@@ -74,12 +74,12 @@ utilizan para diferentes propositos, como uso personal, servidores, cibersegurid
     <div class="distros-grid grid-2">
         <div class="distro-item">
             <img src="{{ basePath }}/img/distro/arch.webp" alt="Ubuntu Logo">
-            <h3>Arch</h3>
+            <h3><a href="https://wiki.archlinux.org/title/Main_page">Arch</a></h3>
             <p>Extremadamente personalizable, ideal para usuarios experimentados.</p>
         </div>
         <div class="distro-item">
             <img src="{{ basePath }}/img/distro/gentoo.png" alt="Linux Mint Logo">
-            <h3>Gentoo</h3>
+            <h3><a href="https://wiki.gentoo.org/wiki/Main_Page">Gentoo</a></h3>
             <p>Permite compilar todo el software para maximizar el rendimiento.</p>
         </div>
         <div class="distro-item">
