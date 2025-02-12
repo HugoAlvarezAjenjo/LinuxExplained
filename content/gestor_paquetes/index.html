@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gestor Paquetes</title>
+  <link rel="stylesheet" href="/LinuxExplained/styles/style.css">
+  
+</head>
+
+<body>
+  <div class="terminal">
+    <header class="terminal-header">
+      <h1>Gestor Paquetes</h1>
+    </header>
+    <main class="terminal-body">
+      <hr>
+<p>Un <strong>gestor de paquetes</strong> es una herramienta de software que automatiza la instalación, actualización, configuración y eliminación de programas en un sistema operativo Linux. Su función principal es simplificar la administración de software y garantizar que las dependencias necesarias para cada aplicación se instalen correctamente.</p>
+<h2>Funcionamiento</h2>
+<p>Los gestores de paquetes utilizan <strong>repositorios</strong>, que son colecciones de paquetes organizadas y mantenidas por la comunidad o por la distribución de Linux. Al instalar un paquete, el gestor verifica las dependencias y las instala automáticamente si es necesario.</p>
+<p>Los hay de dos tipos, los que te instalan los paquetes precompilados y los que compilan el software desde el código fuente antes de instalarlo.</p>
+<h2>Principales Gestores de Paquetes por Distribución</h2>
+<table>
+<thead>
+<tr>
+<th>Distribución</th>
+<th>Gestor de Paquetes</th>
+<th>Comando Base</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Debian, Ubuntu</td>
+<td>APT (Advanced Package Tool)</td>
+<td><code>apt</code></td>
+</tr>
+<tr>
+<td>Arch Linux</td>
+<td>Pacman</td>
+<td><code>pacman</code></td>
+</tr>
+<tr>
+<td>Fedora, RHEL, CentOS</td>
+<td>DNF (anteriormente YUM)</td>
+<td><code>dnf</code></td>
+</tr>
+<tr>
+<td>openSUSE</td>
+<td>Zypper</td>
+<td><code>zypper</code></td>
+</tr>
+<tr>
+<td>Gentoo</td>
+<td>Portage</td>
+<td><code>emerge</code></td>
+</tr>
+<tr>
+<td>NixOS</td>
+<td>Nix</td>
+<td><code>nix</code></td>
+</tr>
+<tr>
+<td>Void Linux</td>
+<td>XBPS</td>
+<td><code>xbps-install</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Dependencias</h2>
+<p>Los gestores de paquetes resuelven dependencias automáticamente, asegurando que el software funcione correctamente. Sin embargo, algunas herramientas como <code>dpkg</code> (Debian) requieren la instalación manual de dependencias.</p>
+
+    </main>
+    <footer class="terminal-footer">
+      <p>&copy; Hugo Alvarez - 2024 | Taller Linux</p>
+    </footer>
+  </div>
+  <script src="/LinuxExplained/js/matrix.js"></script>
+</body>
+
+</html>
