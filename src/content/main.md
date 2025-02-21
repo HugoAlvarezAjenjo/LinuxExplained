@@ -15,7 +15,7 @@ css: /styles/grid.css
       <h3>Distribuciones</h3>
       <p>Las mejores distros de Linux</p>
   </a>
-  <a href="gestores-paquetes.html" class="distro-item">
+  <a href="../gestor_paquetes" class="distro-item">
       <h3>Gestores de Paquetes</h3>
       <p>Cómo manejar paquetes en Linux</p>
   </a>
