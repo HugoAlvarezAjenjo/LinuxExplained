@@ -41,7 +41,7 @@ En fin, poco más que decir. Esperamos que esto te sirva como introducción a un
       <h3>Historia de Linux</h3>
       <p>Desde sus inicios hasta hoy</p>
   </a>
-  <a href="../interfaz-grafica" class="distro-item">
+  <a href="../interfaz_grafica" class="distro-item">
       <h3>Interfaz Gráfica</h3>
       <p>Entornos de escritorio en Linux</p>
   </a>
