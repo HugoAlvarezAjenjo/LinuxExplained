@@ -25,11 +25,11 @@ css: /styles/authors.css
       <p>Junhao Zhu</p>
     </div>
     <div class="author">
-      <img src="{{ basePath }}/img/Personas/Alex.jpg" alt="Author 3">
+      <img src="{{ basePath }}/img/Personas/Alex.jpeg" alt="Author 3">
       <p>Alejandro Salguero</p>
     </div>
     <div class="author">
-      <img src="{{ basePath }}/img/Personas/Pablo.webp" alt="Author 4">
+      <img src="{{ basePath }}/img/Personas/Pablo.jpeg" alt="Author 4">
       <p>Pablo Mateos</p>
     </div>
   </div>
