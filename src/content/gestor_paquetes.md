@@ -25,6 +25,8 @@ Los hay de dos tipos, los que te instalan los paquetes precompilados y los que c
 | NixOS | Nix | `nix` |
 | Void Linux | XBPS | `xbps-install` |
 
+Para realizar una comparativa entre los distintos comandos usados con cada gestor de paquetes, recomendamos [esta sección](https://wiki.archlinux.org/title/Pacman/Rosetta) de la Wiki de Arch. 
+
 ## Dependencias
 
 Los gestores de paquetes resuelven dependencias automáticamente, asegurando que el software funcione correctamente. Sin embargo, algunas herramientas como `dpkg` (Debian) requieren la instalación manual de dependencias.
