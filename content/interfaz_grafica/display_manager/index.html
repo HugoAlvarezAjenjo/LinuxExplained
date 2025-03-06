@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Display Manager</title>
+  <link rel="stylesheet" href="/LinuxExplained/styles/style.css">
+  
+</head>
+
+<body>
+  <div class="terminal">
+    <header class="terminal-header">
+      <h1>Display Manager</h1>
+    </header>
+    <main class="terminal-body">
+      <hr>
+<p>El <strong>Display Manager</strong> (gestor de pantalla) es el componente responsable de gestionar la pantalla de inicio de sesión en Linux. Su función principal es permitir a los usuarios autenticarse y seleccionar su entorno de escritorio antes de acceder a la sesión.</p>
+<h2>Funciones del Display Manager</h2>
+<ul>
+<li><strong>Gestión del inicio de sesión</strong>: Proporciona una interfaz gráfica para que los usuarios ingresen sus credenciales.</li>
+<li><strong>Selección de entorno de escritorio</strong>: Permite elegir entre diferentes entornos de escritorio instalados en el sistema.</li>
+<li><strong>Gestión de sesiones</strong>: Inicia y administra sesiones de usuario.</li>
+<li><strong>Cambio de usuario</strong>: Facilita el cambio entre múltiples usuarios sin cerrar sesiones activas.</li>
+</ul>
+<h2>Principales Display Managers en Linux</h2>
+<h3>1. <strong>GDM (GNOME Display Manager)</strong></h3>
+<ul>
+<li>Usado por el entorno de escritorio GNOME.</li>
+<li>Diseño moderno e integración con Wayland.</li>
+<li>Soporte para autenticación biométrica.</li>
+</ul>
+<h3>2. <strong>SDDM (Simple Desktop Display Manager)</strong></h3>
+<ul>
+<li>Usado por KDE Plasma.</li>
+<li>Interfaz altamente personalizable con temas en QML.</li>
+<li>Soporte para Wayland y X11.</li>
+</ul>
+<h3>3. <strong>LightDM</strong></h3>
+<ul>
+<li>Ligero y rápido, compatible con múltiples entornos de escritorio.</li>
+<li>Soporta diferentes interfaces gráficas como <code>lightdm-gtk-greeter</code>.</li>
+<li>Fácil de configurar y personalizar.</li>
+</ul>
+<h3>4. <strong>LXDM</strong></h3>
+<ul>
+<li>Diseñado para el entorno LXQt, pero puede usarse con otros escritorios.</li>
+<li>Ligero y rápido, ideal para sistemas con pocos recursos.</li>
+</ul>
+<h2>¿Cómo cambiar el Display Manager?</h2>
+<p>En la mayoría de las distribuciones, puedes cambiar el Display Manager instalando uno nuevo y configurándolo como predeterminado. En sistemas basados en Debian/Ubuntu:</p>
+<pre><code class="language-bash">sudo dpkg-reconfigure gdm3  # o sddm, lightdm, lxdm
+</code></pre>
+<p>En Arch Linux, se puede habilitar con <code>systemctl</code>:</p>
+<pre><code class="language-bash">sudo systemctl enable sddm.service --force
+</code></pre>
+
+    </main>
+    <footer class="terminal-footer">
+      <p>&copy; Hugo Alvarez - 2024 | Taller Linux</p>
+    </footer>
+  </div>
+  <script src="/LinuxExplained/js/matrix.js"></script>
+</body>
+
+</html>

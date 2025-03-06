@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Compositor</title>
+  <link rel="stylesheet" href="/LinuxExplained/styles/style.css">
+  
+</head>
+
+<body>
+  <div class="terminal">
+    <header class="terminal-header">
+      <h1>Compositor</h1>
+    </header>
+    <main class="terminal-body">
+      <p>El <strong>Compositor</strong> es un componente clave de la interfaz gráfica en Linux que se encarga de dibujar y combinar todas las ventanas y elementos visuales en pantalla. Su función principal es mejorar la experiencia gráfica proporcionando efectos avanzados y una mejor gestión de las ventanas.</p>
+<h2>Función del Compositor</h2>
+<p>El compositor actúa como intermediario entre el <strong>Display Server</strong> y el <strong>Window Manager</strong>, asegurando que todas las ventanas y gráficos se rendericen de manera fluida y sin interferencias visuales. Sus principales funciones incluyen:</p>
+<ul>
+<li><strong>Efectos gráficos avanzados</strong>: Transparencias, sombras, desenfoques y animaciones.</li>
+<li><strong>Redibujo eficiente</strong>: Previene el parpadeo y los cortes de imagen al actualizar solo las partes necesarias de la pantalla.</li>
+<li><strong>Gestión de superposición de ventanas</strong>: Controla qué ventana está en primer plano y cómo interactúan entre sí.</li>
+<li><strong>Compatibilidad con alto refresco</strong>: Permite sincronización con la tasa de refresco del monitor (VSync) para evitar desgarros de imagen (<em>screen tearing</em>).</li>
+</ul>
+<h2>Tipos de Compositores en Linux</h2>
+<p>Existen dos tipos principales de compositores en Linux:</p>
+<h3>1. <strong>Compositores Integrados</strong></h3>
+<p>Son parte del entorno de escritorio y están diseñados para funcionar de manera optimizada con él. Ejemplos:</p>
+<ul>
+<li><strong>Mutter</strong> (usado en GNOME)</li>
+<li><strong>KWin</strong> (usado en KDE Plasma)</li>
+<li><strong>Xfwm</strong> (usado en XFCE)</li>
+</ul>
+<h3>2. <strong>Compositores Independientes</strong></h3>
+<p>Se pueden usar con cualquier Window Manager, especialmente en entornos minimalistas o con gestores de ventanas flotantes o en mosaico (<em>tiling</em>). Ejemplos:</p>
+<ul>
+<li><strong>Compton/Picom</strong> (ligero y configurable, ideal para Openbox o i3)</li>
+<li><strong>XCompmgr</strong> (uno de los primeros compositores, muy básico)</li>
+<li><strong>Wayfire</strong> (compositor para Wayland con efectos avanzados)</li>
+</ul>
+<h2>Compositor en X11 vs Wayland</h2>
+<table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>X11 con Compositor</th>
+<th>Wayland</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Necesidad de un compositor externo</td>
+<td>Sí</td>
+<td>No (Wayland integra el compositor)</td>
+</tr>
+<tr>
+<td>Rendimiento</td>
+<td>Menos eficiente</td>
+<td>Más eficiente</td>
+</tr>
+<tr>
+<td>Screen tearing</td>
+<td>Puede ocurrir si no está bien configurado</td>
+<td>Eliminado por diseño</td>
+</tr>
+<tr>
+<td>Efectos avanzados</td>
+<td>Depende del compositor usado</td>
+<td>Nativos en la mayoría de los entornos</td>
+</tr>
+</tbody>
+</table>
+<h2>¿Cuándo usar un compositor independiente?</h2>
+<p>Si usas un Window Manager minimalista o no tienes un entorno de escritorio completo, un compositor independiente como <strong>Picom</strong> puede mejorar tu experiencia visual sin sobrecargar el sistema.</p>
+
+    </main>
+    <footer class="terminal-footer">
+      <p>&copy; Hugo Alvarez - 2024 | Taller Linux</p>
+    </footer>
+  </div>
+  <script src="/LinuxExplained/js/matrix.js"></script>
+</body>
+
+</html>

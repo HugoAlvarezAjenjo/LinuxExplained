@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Display Server</title>
+  <link rel="stylesheet" href="/LinuxExplained/styles/style.css">
+  
+</head>
+
+<body>
+  <div class="terminal">
+    <header class="terminal-header">
+      <h1>Display Server</h1>
+    </header>
+    <main class="terminal-body">
+      <hr>
+<p>El <strong>Display Server</strong> (servidor de pantalla) es un componente esencial en la interfaz gráfica de Linux. Su función principal es actuar como intermediario entre el hardware gráfico y las aplicaciones que generan interfaces gráficas, permitiendo la representación visual en la pantalla.</p>
+<h2>Función del Display Server</h2>
+<p>El servidor de pantalla gestiona:</p>
+<ul>
+<li><strong>Entrada y salida de gráficos</strong>: Renderiza las interfaces gráficas y las muestra en la pantalla.</li>
+<li><strong>Eventos de entrada del usuario</strong>: Captura y envía eventos del teclado, ratón y otros dispositivos de entrada a las aplicaciones.</li>
+<li><strong>Gestión de ventanas</strong>: Interactúa con el Window Manager para definir cómo se organizan las ventanas en pantalla.</li>
+</ul>
+<h2>Principales Display Servers en Linux</h2>
+<h3>1. <strong>X11 (Xorg)</strong></h3>
+<p>X11, o simplemente X, es el sistema de ventana más antiguo y ampliamente utilizado en Linux. Xorg es su implementación más común.</p>
+<p><strong>Características:</strong></p>
+<ul>
+<li>Modelo cliente-servidor, donde las aplicaciones (clientes) se comunican con el servidor de pantalla.</li>
+<li>Soporta redirección remota de aplicaciones gráficas.</li>
+<li>Modular y altamente extensible mediante extensiones como XRandR y XComposite.</li>
+</ul>
+<p><strong>Desventajas:</strong></p>
+<ul>
+<li>Diseño anticuado con problemas de seguridad y rendimiento.</li>
+<li>Necesita un compositor adicional para efectos modernos y fluidez.</li>
+</ul>
+<h3>2. <strong>Wayland</strong></h3>
+<p>Wayland es un protocolo más moderno que busca reemplazar a X11, ofreciendo una arquitectura más simple y eficiente.</p>
+<p><strong>Características:</strong></p>
+<ul>
+<li>No usa un modelo cliente-servidor tradicional, reduciendo la latencia y mejorando la seguridad.</li>
+<li>Incorpora compositor integrado, eliminando la necesidad de componentes externos como XComposite.</li>
+<li>Mejor compatibilidad con pantallas HiDPI y sincronización de frames.</li>
+</ul>
+<p><strong>Desventajas:</strong></p>
+<ul>
+<li>Todavía no es compatible con todas las aplicaciones y controladores gráficos.</li>
+<li>Falta de compatibilidad con el redireccionamiento remoto de aplicaciones (aunque existen soluciones como PipeWire para transmisión de pantalla).</li>
+</ul>
+<h2>Diferencias entre X11 y Wayland</h2>
+<table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>X11 (Xorg)</th>
+<th>Wayland</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Modelo</td>
+<td>Cliente-servidor</td>
+<td>Directo con compositor</td>
+</tr>
+<tr>
+<td>Rendimiento</td>
+<td>Más latencia</td>
+<td>Menos latencia</td>
+</tr>
+<tr>
+<td>Seguridad</td>
+<td>Menos segura (X11 permite sniffing de entradas)</td>
+<td>Más segura</td>
+</tr>
+<tr>
+<td>Soporte de Red</td>
+<td>Sí</td>
+<td>No nativo</td>
+</tr>
+<tr>
+<td>Soporte de HiDPI</td>
+<td>Limitado</td>
+<td>Nativo</td>
+</tr>
+</tbody>
+</table>
+
+    </main>
+    <footer class="terminal-footer">
+      <p>&copy; Hugo Alvarez - 2024 | Taller Linux</p>
+    </footer>
+  </div>
+  <script src="/LinuxExplained/js/matrix.js"></script>
+</body>
+
+</html>
